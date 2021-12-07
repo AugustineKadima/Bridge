@@ -23,3 +23,6 @@ public class ReverseInteger {
 //Find remainder = num%10
 //result = results * 10 + remaider;
 //Find floor of num/10
+
+//Space complexity = O(1)
+//Time complexity = O(n)
