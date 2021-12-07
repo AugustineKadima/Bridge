@@ -38,5 +38,5 @@ public class ReverseIntegerTwo {
 //Convert array[i] to integer and append to result
 //return the result
 
-//Time complexity = O(n2)
+//Time complexity = O(n)
 //Space complexity = O(n)
