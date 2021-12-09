@@ -17,15 +17,17 @@ public class ValidParentheses {
                 myStack.pop();
             }else if(parenthesesArray[i] == ']' && !myStack.isEmpty() && myStack.peek() == '[' ){
                 myStack.pop();
-            }else if(parenthesesArray[i] == '{' && !myStack.isEmpty() && myStack.peek() == '}' ){
+            }else if(parenthesesArray[i] == '}' && !myStack.isEmpty() && myStack.peek() == '{' ){
                 myStack.pop();
+            }else{
+                return false;
             }
         }
 
         return myStack.isEmpty();
     }
     public static void main(String[] args) {
-       boolean results = ValidParentheses.isValid("(])");
+       boolean results = ValidParentheses.isValid("{}");
         System.out.println(results);
     }
 }
