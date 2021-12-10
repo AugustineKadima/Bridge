@@ -65,8 +65,6 @@ public class SinglyLinkedList {
             System.out.println("Deleted: "+ n1.data);
             n1 = null;
         }
-
-
     }
 
     public void show(){
@@ -87,7 +85,6 @@ public class SinglyLinkedList {
         singlyLinkedList.insertAtStart(8);
         singlyLinkedList.insertAt(2, 78);
         singlyLinkedList.insertAt(0, 1);
-
         singlyLinkedList.show();
     }
 }
