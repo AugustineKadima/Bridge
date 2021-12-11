@@ -25,7 +25,7 @@ public class ReverseIntegerTwo {
         return results;
     }
     public static void main(String[] args) {
-        int result = ReverseIntegerTwo.reverseInteger(-901);
+        int result = ReverseIntegerTwo.reverseInteger(0);
         System.out.println(result);
     }
 }

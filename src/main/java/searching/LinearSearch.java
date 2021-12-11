@@ -24,3 +24,5 @@ public class LinearSearch {
 //Convert string to char array
 //loop
 //return position of a given character
+//Time complexity = O(n)
+//Space complexity = O(1)
