@@ -1,24 +1,22 @@
 package sorting;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 
-public class SortPeople {
+public class SortPeopleComparable {
 
     public static void main(String[] args) {
         ArrayList<Person> people = new ArrayList<>();
         people.add(new Person("Dennis", 44, "Nairobi"));
         people.add(new Person("Mary", 14, "Kisumu"));
-        people.add(new Person("John", 13, "kwale"));
+        people.add(new Person("John", 13, "Kwale"));
         people.add(new Person("Ruth", 24, "Mandera"));
         people.add(new Person("Karen", 32, "Kakuma"));
         people.add(new Person("Peter", 29, "Isiolo"));
-        people.add(new Person("Irene", 7, "nyeri"));
-        people.add(new Person("Mohamud", 21, "voi"));
+        people.add(new Person("Irene", 7, "Nyeri"));
+        people.add(new Person("Mohamud", 21, "Voi"));
 
-        Collections.sort(people);
+        Collections.sort(people, new SortPeopleComparator());
 
         for(Person i: people) System.out.println(i);
     }
