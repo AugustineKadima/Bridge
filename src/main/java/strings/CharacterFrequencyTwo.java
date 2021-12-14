@@ -31,3 +31,5 @@ public class CharacterFrequencyTwo {
 //loop and increment the count in the array
 //get the count and concat to the character
 //concat to the output
+//Time complexity = O(n)
+//Space complexity = O(n)
