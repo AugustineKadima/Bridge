@@ -2,7 +2,7 @@ package integers;
 
 public class FindSquareRoot {
     private static  int squareRoot(int n){
-        if(n < 2) return 1;
+        if(n < 2) return n;
         int start = 1;
         int end = n;
         while (start < end){
