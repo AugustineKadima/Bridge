@@ -1,6 +1,6 @@
 package integers;
 
-public class MaxSum {
+public class FindMaxSum {
     public static int findMaxSum(int[] nums, int subArraySize){
         if(subArraySize > nums.length) return -1;
 
@@ -16,7 +16,7 @@ public class MaxSum {
         return maxSum;
     }
     public static void main(String[] args) {
-        int result = MaxSum.findMaxSum(new int[]{1,9,-1,-2,6,3,-1,2}, 4);
+        int result = FindMaxSum.findMaxSum(new int[]{1,9,-1,-2,6,3,-1,2}, 4);
         System.out.println(result);
 
     }
@@ -26,3 +26,6 @@ public class MaxSum {
 //Loop through nums
 //create an inner loop to compute the sum of sub array
 //Compare the sum of sub array to max sum and return the largest
+
+//Time complexity = O(n2)
+//Space complexity = O(1)
