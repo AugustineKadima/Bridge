@@ -22,7 +22,7 @@ public class LongestSubstring {
         return longestLength;
     }
     public static void main(String[] args) {
-        int results = LongestSubstring.longestSubstringLength("abcabcbb");
+        int results = LongestSubstring.longestSubstringLength("bagfdbbbbbbb");
         System.out.println(results);
     }
 }
@@ -40,3 +40,6 @@ public class LongestSubstring {
 //remove when a repeating character is encountered, remove the initial character in the set
 //Re initialize count
 //return max
+
+//Time complexity = O(n)
+//Space complexity = O(n)

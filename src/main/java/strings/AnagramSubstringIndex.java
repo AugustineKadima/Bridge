@@ -20,25 +20,7 @@ public class AnagramSubstringIndex {
             }
         }
 
-        int start = 0;
-        int end = 0;
-        int count = s2.length();
-        while(end < s1Chars.length){
-            if(charFreqMap.containsKey(s1Chars[end])){
-                end++;
-                count--;
-            }
-            if(count == 0){
-                output.add(start);
-            }
 
-            for(int i = start; i <= end; i++){
-
-            }
-
-
-
-        }
 
         return output;
     }
