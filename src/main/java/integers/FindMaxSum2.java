@@ -25,8 +25,11 @@ public class FindMaxSum2 {
     }
 }
 //Pseudocode
-//
+//Optimized solution
 //Loop through the window
 //record window sum and store it as the initial sum
 //loop through the whole array from k to n - 1 and compute the window sum while subtracting the first value and adding the new value
 //Compare window sum and max sum and return max sum
+
+//Time complexity = O(n)
+//Space complexity = O(1)
