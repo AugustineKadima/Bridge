@@ -59,3 +59,6 @@ public class FindSmallestPossible {
 //if peek of stack is larger than nums[i], pop from stack , and nums[i]
 //pop from stack and store in results
 //Return results
+
+//Space complexity = O(n)
+//Time complexity = O(n)
