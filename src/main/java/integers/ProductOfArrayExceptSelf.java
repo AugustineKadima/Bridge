@@ -2,32 +2,24 @@ package integers;
 
 public class ProductOfArrayExceptSelf {
     public static int[] findProduct(int[] nums){
-        int productLeft = 1;
-        int productRight = 1;
+
         int[] output = new int[nums.length];
+        int product = 1;
         for(int i = 0; i < nums.length; i++){
-            for(int j = 0; j < i; j++){
-                if(i == 0) productLeft = 1;
-                else productLeft *= nums[j];
-
+            for(int j = 0; j < nums.length; j++){
+                if(i != j){
+                    product *= nums[j];
+                }
             }
 
-            for(int j = i+1; j < nums.length; j++){
-                productRight *= nums[j];
-            }
-
-            System.out.println("left = " + productLeft);
-            System.out.println("right = " + productRight);
-
-            output[i] = productLeft + productRight - 1;
-
+            output[i] = product;
+            product = 1;
         }
-
         return output;
     }
     public static void main(String[] args) {
         int[] results = ProductOfArrayExceptSelf.findProduct(new int[] {1,2,3,4});
-        for(int i:results) System.out.println(i);
+        for(int i:results) System.out.println("Output: "+i);
     }
 }
 
@@ -43,3 +35,6 @@ public class ProductOfArrayExceptSelf {
 //find product
 //Store product in a new array
 //Return new array
+
+//Time complexity = O(n2)
+//Space complexity = O(n)

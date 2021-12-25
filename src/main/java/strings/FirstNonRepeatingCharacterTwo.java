@@ -34,3 +34,6 @@ public class FirstNonRepeatingCharacterTwo {
 //Loop though string and add char freq to hashmap
 //loop through string again and check if character has a frequency of 1
 //return character
+
+//Time complexity = O(n)
+//Space complexity = O(n)
