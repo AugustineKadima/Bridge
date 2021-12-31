@@ -47,5 +47,8 @@ public class MinimumTreeValue {
     }
 }
 
+//Time complexity = O(n)
+//Space complexity = O(n)
+
 
 
