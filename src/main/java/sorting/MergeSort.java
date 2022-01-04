@@ -14,7 +14,7 @@ public class MergeSort {
 
     public static int[] mergeSort(int[] inputArray){
         int inputLength = inputArray.length;
-        if(inputLength < 2) return null;
+        if(inputLength < 2) return inputArray;
 
 //        Find midpoint of array
         int midIndex = inputLength/2;
