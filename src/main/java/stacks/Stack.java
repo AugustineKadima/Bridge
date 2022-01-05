@@ -37,6 +37,10 @@ public class Stack {
         }
        return -1;
     }
+
+    public boolean empty(){
+        return back == 0;
+    }
     public static void main(String[] args) {
         Stack stack = new Stack(5);
 //        stack.push(3);
@@ -51,7 +55,7 @@ public class Stack {
 //        stack.pop();
 //        stack.pop();
 //        stack.pop();
-
+        System.out.println(stack.empty());
 
 
 
