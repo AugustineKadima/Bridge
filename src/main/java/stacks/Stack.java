@@ -1,7 +1,7 @@
 package stacks;
 
 public class Stack {
-    int[] stack = new int[0];
+    int[] stack;
     int back = 0;
 
     public Stack(int size){
@@ -29,25 +29,40 @@ public class Stack {
         stack[back] = 0;
         return rearValue;
     }
+
+    public int peek(){
+        if(back > 0){
+            System.out.println("At back: "+stack[back - 1]);
+            return stack[back - 1];
+        }
+       return -1;
+    }
     public static void main(String[] args) {
         Stack stack = new Stack(5);
-        stack.push(3);
-        stack.push(9);
-        stack.push(6);
-        stack.push(4);
-        stack.push(8);
-        stack.push(7);
-        stack.push(7);
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
+//        stack.push(3);
+//        stack.push(9);
+//        stack.push(6);
+//        stack.push(4);
+//        stack.push(8);
+//        stack.push(7);
+//        stack.push(7);
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+
+
+
+
+
 
 //
 
         for(int i: stack.stack) System.out.println(i);
+        System.out.println("Peek: "+stack.peek());
     }
 }
+
+//Time complexity push = O(1)
+//Time complexity pop = O(1)
