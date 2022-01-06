@@ -1,8 +1,11 @@
 package stacks;
 
 public class StackTwo {
-    int[] stack;
+    public int[] stack;
+    public int size;
+
     public StackTwo(int size){
+        this.size = size;
         stack = new int[size];
     }
     int back = 0;
