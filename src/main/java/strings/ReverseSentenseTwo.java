@@ -9,6 +9,7 @@ public class ReverseSentenseTwo {
         }
 
         String[] wordArray = wordString.split(" ");
+
         int n = wordArray.length;
 
         for(int i = 0; i < n; i++){
@@ -24,7 +25,6 @@ public class ReverseSentenseTwo {
             reversedSentense += wordArray[i] + " ";
         }
         char[] output = reversedSentense.trim().toCharArray();
-        System.out.println("-----------"+ output.getClass());
 
         return output;
     }
@@ -32,7 +32,7 @@ public class ReverseSentenseTwo {
     public static void main(String[] args) {
         ReverseSentenseTwo revS= new ReverseSentenseTwo();
         char[] ans = revS.reverse(new char[] {'t','h','i','s',' ','i','s',' ','g','o','o','d'});
-        System.out.println(ans.getClass());
+        System.out.println(ans);
 
     }
 

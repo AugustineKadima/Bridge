@@ -5,7 +5,7 @@ public class CircularQueue {
     int front = 0, back = 0;
 
     public void enqueue(int num){
-        if(back < queue.length) {
+        if(back < queue.length && queue[back] == 0) {
             queue[back] = num;
             ++back;
         }else if(front != 0 && back >= queue.length){
@@ -17,6 +17,8 @@ public class CircularQueue {
                 queue[back] = num;
                 ++back;
             }
+        }else{
+            System.out.println("Queue is full!");
         }
     }
 
@@ -43,13 +45,15 @@ public class CircularQueue {
         queue.enqueue(8);
         queue.enqueue(5);
         queue.enqueue(9);
+//        queue.enqueue(7);
+
+
         queue.dequeue();
-        queue.enqueue(7);
+        queue.enqueue(10);
+        queue.dequeue();
         queue.enqueue(20);
 
 
-//        queue.dequeue();
-//        queue.enqueue(10);
 
 
 
@@ -83,3 +87,8 @@ public class CircularQueue {
 //[5,6,7,0]
 //enqueue
 //[5,6,7,8]
+
+//Time complexity
+//---------
+//enqueue = O(1)
+//dequeue = O(1)
